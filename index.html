@@ -5,8 +5,111 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="intro">
+        <span>Welcome</span>
+        <span>to the gorgeous</span>
+        <h1>Sedona</h1>
+        <span>Because the Grand  Canyon sucks!</span>
+      </div>
+      <div class="features">
+      	<h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      	<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      	<div class="feature-wrapper">
+      	  <div class="feature-item">
+      	    <b>Настоящий городок</b>
+      	    <span>№1</span>
+      	    <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+      	  </div>
+      	</div>
+      	<div class="feature-wrapper">
+      		<div class="feature-item housing">
+      			<b>Жилье</b>
+      			<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      		</div>
+      		<div class="feature-item food">
+      			<b>Еда</b>
+      			<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+      		</div>
+      		<div class="feature-item souvenirs">
+      			<b>Сувениры</b>
+      			<p>Не только китайского, но и местного производства!</p>
+      		</div>
+      	</div>
+      	<div class="feature-wrapper">
+	      	<div class="feature-item">
+	      	  <b>Там есть мост дьявола</b>
+	      	  <span>№2</span>
+	      	  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+	      	</div>
+	      </div>
+      	<div class="feature-wrapper">
+					<div class="feature-item">
+						<b>Небольшая площадь</b>
+						<span>№3</span>
+						<p>Все достопримечательности находятся очень близко</p>
+					</div>
+					<div class="feature-item">
+						<b>Красивая дорога</b>
+						<span>№4</span>
+						<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					</div>
+					<div class="feature-item">
+						<b>Мало туристов</b>
+						<span>№5</span>
+						<p>Большинство едет в Гранд Каньон и толпится там</p>
+					</div>      		
+      	</div>
+      </div>
+      <div class="hotel-search">
+      	<b>Заинтересовались?</b>
+      	<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      	<h2>Поиск гостиницы в Седоне</h2>
+      	<form>
+      		<label>
+      			Дата заезда: 
+      			<input type="date" name="arrival">
+      		</label>
+      		<label>
+      			Дата выезда: 
+      			<input type="date" name="departure">
+      		</label>
+      		<label>
+      			Взрослые: 
+      			<input type="number" name="adults">
+      		</label>
+      		<label>
+      			Дети: 
+      			<input type="number" name="children">
+      		</label>
+      		<input type="submit" value="Найти">
+      	</form>
+      	<img src="#" width="1200" height="473" alt="Карта">
+      </div>	
+    </main>
+    <footer class="main-footer">
+    	<div class="hashtag">
+    		<a href="#">#visitsedona</a>
+    	</div>
+    	<div class="socials">
+    		<a href="#">Twitter</a>
+    		<a href="#">Facebook</a>
+    		<a href="#">YouTube</a>
+    	</div>
+    	<div class="copyright">
+    		<span>Websyte by</span>
+    		<a href="#"><img src="#" width="115" height="45" alt="Логотип HTML Academy"></a>
+    	</div>
+    </footer>
   </body>
 </html>
