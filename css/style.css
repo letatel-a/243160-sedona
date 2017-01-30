@@ -1,4 +1,5 @@
 body {
+	width: 1200px;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
@@ -6,14 +7,170 @@ body {
 	font-family: "PT Sans", sans-serif;
 }
 
-h2 {
+h2,h3 {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
 	font-family: "PT Sans", sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h3 {
+	line-height: 21px;
+}
+
+p {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.central {
+	margin: 0 auto;
+}
+
+.main-header {
+	min-height: 56px;
+	outline: 1px solid red;
+}
+
+.main-nav ul {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	list-style: none;
+}
+
+.main-nav li {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+	vertical-align: bottom;
 }
 
 .intro {
+	min-height: 508px;
+	padding-top: 76px;
+	padding-bottom: 80px;
 	background-color: #333333;
+}
+
+.intro img {
+	display: block;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.feature-item {
+	float: left;
+	width: 400px;
+	min-height: 256px;
+	text-align: center;
+
+	outline: 1px solid red;
+}
+
+.feature-item.left,
+.feature-item.right {
+	width: 286px;
+	min-height: 142px;
+	padding: 57px;
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+.feature-item.left h3,
+.feature-item.right h3 {
+	color: #ffffff;
+}
+
+.feature-item.right {
+	float: right;
+}
+
+.location {
+	text-align: center;
+	outline: 1px solid red;
+}
+
+.location span {
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.hotel-search {
+	width: 568px;
+	outline: 1px solid red;
+}
+
+.main-footer {
+	min-height: 120px;
+}
+
+.hashtag {
+	float: left;
+	width: 400px;
+	outline: 1px solid red;
+}
+
+.socials {
+	float: left;
+	width: 400px;
+	outline: 1px solid red;
+}
+
+.copyright {
+	float: right;
+	width: 400px;
+	outline: 1px solid red;
+}
+
+/* hotels */
+
+.filters fieldset {
+	float: left;
+	width: 300px;
+}
+
+.sort {
+	outline: 1px solid red;
+}
+
+.sort ul {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	list-style: none;
+}
+
+.sort li {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 21px;
+	vertical-align: bottom;
+}
+
+.sort-order {
+	float: right;
+	width: 240px;
+}
+
+.hotels ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.rating {
+	float: right;
+	width: 240px;
 }
