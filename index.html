@@ -8,31 +8,31 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header central">
-      <nav class="main-nav">
-      	<img src="img/logo.png" width="138" height="70" alt="Лого Седона">
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="central">
-      <div class="intro">
-        <img class="central" src="img/intro-text.png" width="458" height="352" alt="Welcome to Sedona">
-      </div>
-      <div class="features">
-      	<h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
-      	<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      	<div class="feature-wrapper clearfix">
-      	  <div class="feature-item left">
-      	    <h3>Настоящий<br>городок</h3>
-      	    <span>&mdash; №1 &mdash;</span>
-      	    <p>Седона &mdash; не аттракцион для туристов,<br>там течет своя жизнь</p>
-      	  </div>
-      	</div>
+  	<header class="main-header central">
+	    <nav class="main-nav">
+	    	<img src="img/logo.png" width="138" height="70" alt="Лого Седона">
+	      <ul>
+	        <li><a href="#">Информация</a></li>
+	        <li><a href="#">Фото и видео</a></li>
+	        <li><a href="#">Карта штата</a></li>
+	        <li><a href="#">Гостиницы</a></li>
+	      </ul>
+	    </nav>
+	  </header>
+	  <main class="central">
+	    <div class="intro">
+	      <img src="img/intro-text.png" width="458" height="352" alt="Welcome to Sedona">
+	    </div>
+	    <div class="features">
+	    	<h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+	    	<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+	    	<div class="feature-wrapper clearfix">
+	     	  <div class="feature-item left">
+	     	    <h3>Настоящий<br>городок</h3>
+	     	    <span>&mdash; №1 &mdash;</span>
+	     	    <p>Седона &mdash; не аттракцион для туристов,<br>там течет своя жизнь</p>
+	     	  </div>
+	     	</div>
       	<div class="feature-wrapper  clearfix">
       		<div class="feature-item housing">
       			<h3>Жилье</h3>
@@ -72,47 +72,48 @@
 					</div>      		
       	</div>
       </div>
-      <div class="location">
-      	<span>Заинтересовались?</span>
-      	<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+	    <div class="location">
+	     	<span>Заинтересовались?</span>
+	     	<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 	      <div class="hotel-search central">
-	      	<h2>Поиск гостиницы в Седоне</h2>
-	      	<form>
+	      	<h2 class="search-button">Поиск гостиницы в Седоне</h2>
+	      	<form class="search-form">
 	      		<div class="field-wrapper clearfix">
 		      		<label for="arr">Дата заезда:</label>
 		      		<input class="date" type="text" name="arrival" placeholder="24 апреля 2017" id="arr">
-		      		<button class="calendar">Календарь</button>
+		      		<button class="calendar" type="button">Календарь</button>
 		      	</div>
 	      		<div class="field-wrapper clearfix">
 		      		<label for="dep">Дата выезда:</label>
 		      		<input class="date" type="text" name="departure" placeholder="4 июля 2017" id="dep">
-		      		<button class="calendar">Календарь</button>
+		      		<button class="calendar" type="button">Календарь</button>
 		      	</div>
 		      	<div class="field-wrapper clearfix">
 	      			<label for="ad">Взрослые:</label>
 	      			<div class="number-wrapper clearfix">
-		      			<button class="down"></button>
+		      			<button class="down" type="button"></button>
 		      			<input class="number" type="text" name="adults" placeholder="2" id="ad">
-		      			<button class="up"></button>
+		      			<button class="up" type="button"></button>
 	      			</div>
 	      			<label for="chi">Дети:</label>
 	      			<div class="number-wrapper clearfix">
-	      				<button class="down"></button>
+	      				<button class="down" type="button"></button>
 	      				<input class="number" type="text" name="children" placeholder="0" id="chi">
-	      				<button class="up"></button>
+	      				<button class="up" type="button"></button>
 	      			</div>
 	      		</div>
 	      		<button class="btn" type="submit">Найти</button>
 	      	</form>
 	      </div>
 	      <div class="map">
-      		<img src="img/map.jpg" width="1200" height="593" alt="Карта">
+	      	<img src="img/map.jpg" width="1200" height="473" alt="Карта">
+      		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706999.9603019269!2d-111.73560559195013!3d34.597702647841544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1487594665826" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
       	</div>
-      </div>	
-    </main>
-    <footer class="main-footer central clearfix">
-    	<div class="hashtag">
-    		<a href="#">#visitsedona</a>
+  	  </div>	
+		</main>
+  	<footer class="main-footer central clearfix">
+   		<div class="hashtag">
+   			<a href="#">#visitsedona</a>
     	</div>
     	<div class="socials">
     		<a class="btn socials-tw" href="#">Twitter</a>
@@ -124,5 +125,6 @@
     		<a href="#">HTML Academy</a>
     	</div>
     </footer>
+    <script src="js/popup.js"></script>
   </body>
 </html>

@@ -31,11 +31,11 @@ p {
 }
 
 .central {
+	width: 1200px;
 	margin: 0 auto;
 }
 
 .main-header {
-	width: 1200px;
 	min-height: 56px;
 	background-color: #ffffff;
 }
@@ -101,7 +101,6 @@ p {
 }
 
 main {
-	width: 1200px;
 	background-color: #ffffff;
 }
 
@@ -116,6 +115,7 @@ main {
 
 .intro img {
 	display: block;
+	margin: 0 auto;
 }
 
 .clearfix::after {
@@ -230,22 +230,70 @@ main {
 	width: 568px;
 }
 
-.hotel-search h2 {
+.hotel-search .search-button {
 	padding: 34px 0;
 	color: #ffffff;
 	background-color: #766357;
+	cursor: pointer;
 }
 
-.hotel-search form {
+.hotel-search .search-button:hover {
+	background-color: #604e43;
+}
+
+.hotel-search .search-button:active {
+	color: rgba(255,255,255,0.3);
+	background-color: #503e33;
+}
+
+.search-form {
 	position: absolute;
 	top: 94px;
 	left: 0;
+	z-index: 4;
+	display: none;
 	padding: 55px;
 	font-weight: 700;
 	background-color: #ffffff;
 }
 
-.hotel-search .field-wrapper {
+@keyframes appearance {
+	0% {
+		opacity: 0;
+	}
+	33% {
+		opacity: 0,3;
+	}
+	66% {
+		opacity: 0.6;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes shake {
+	0%, 100% {
+    	transform: translateX(0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+    	transform: translateX(-10px);
+	}
+	20%, 40%, 60%, 80% {
+    	transform: translateX(10px);
+	}
+}
+
+.search-form-show {
+	display: block;
+	animation: appearance 0.3s;
+}
+
+.search-form-error {
+	animation: shake 0.5s;
+}
+
+.search-form .field-wrapper {
 	position: relative;
 	margin-bottom: 30px;
 	padding: 0;
@@ -275,7 +323,7 @@ main {
 	background-position: 0 -77px;
 }
 
-.hotel-search label {
+.search-form label {
 	display: inline-block;
 	width: 112px;
 	font-size: 14px;
@@ -283,7 +331,7 @@ main {
 	vertical-align: top;
 }
 
-.hotel-search input {
+.search-form input {
 	display: inline-block;
 	border: none;
 	padding-top: 6px;
@@ -298,21 +346,21 @@ main {
 	outline: none;
 }
 
-.hotel-search .date {
+.search-form .date {
 	width: 292px;
 	padding-left: 13px;
 	padding-right: 41px;
 }
 
-.hotel-search .date:hover {
+.search-form .date:hover {
 	background-color: #ebebeb;
 }
 
-.hotel-search .date:active {
+.search-form .date:active {
 	background-color: #ebebeb;
 }
 
-.hotel-search .date:focus {
+.search-form .date:focus {
 	width: 288px;
 	border: 2px solid #e5e5e5;
 	padding-top: 4px;
@@ -320,7 +368,7 @@ main {
 	background-color: #ffffff;
 }
 
-.hotel-search .number {
+.search-form .number {
 	width: 34px;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -337,8 +385,8 @@ main {
 	position: relative;
 }
 
-.hotel-search .up,
-.hotel-search .down {
+.search-form .up,
+.search-form .down {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -353,28 +401,28 @@ main {
 	cursor: pointer;
 }
 
-.hotel-search .up:hover {
+.search-form .up:hover {
 	background-position: -62px -25px;
 }
 
-.hotel-search .up:active {
+.search-form .up:active {
 	background-position: -62px -63px;
 }
 
-.hotel-search .down {
+.search-form .down {
 	left: 0;
 	background-position: 14px 14px;
 }
 
-.hotel-search .down:hover {
+.search-form .down:hover {
 	background-position: 14px -25px;
 }
 
-.hotel-search .down:active {
+.search-form .down:active {
 	background-position: 14px -63px;
 }
 
-.hotel-search button[type="submit"] {
+.search-form button[type="submit"] {
 	width: 100%;
 	clear: both;
 	border: none;
@@ -385,8 +433,25 @@ main {
 	outline: none;
 }
 
+.location .map {
+	position: relative;
+}
+
+.map img {
+	position: relative;
+	z-index: 1;
+}
+
+.map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
 .main-footer {
-	width: 1200px;
+	position: relative;
+	z-index: 3;
 	min-height: 120px;
 	background-color: rgba(255,255,255,0.9);
 }
