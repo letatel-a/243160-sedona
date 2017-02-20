@@ -23,21 +23,59 @@
     	<form class="filters clearfix">
     		<fieldset>
     			<legend>Инфраструктура:</legend>
-    			<input type="checkbox" name="infrastructure" value="pool" checked>
-    			<input type="checkbox" name="infrastructure" value="parking">
-    			<input type="checkbox" name="infrastructure" value="wifi">
+    			<label>
+    				<input type="checkbox" name="infrastructure" value="pool" checked>
+    				<span class="checkbox-indicator"></span>
+    				Бассейн
+    			</label>
+    			<label>
+    				<input type="checkbox" name="infrastructure" value="parking">
+    				<span class="checkbox-indicator"></span>
+    				Парковка
+    			</label>
+    			<label>
+    				<input type="checkbox" name="infrastructure" value="wifi">
+    				<span class="checkbox-indicator"></span>
+    				WI-FI
+    			</label>
     		</fieldset>
     		<fieldset>
     			<legend>Тип жилья:</legend>
-    			<input type="checkbox" name="housing" value="hotel" checked>
-    			<input type="checkbox" name="housing" value="motel" checked>
-    			<input type="checkbox" name="housing" value="apartments" checked>
+    			<label>
+    				<input type="checkbox" name="housing" value="hotel" checked>
+    				<span class="checkbox-indicator"></span>
+    				Гостиница
+    			</label>
+    			<label>
+    				<input type="checkbox" name="housing" value="motel" checked>
+    				<span class="checkbox-indicator"></span>
+    				Мотель
+    			</label>
+    			<label>
+    				<input type="checkbox" name="housing" value="apartments" checked>
+    				<span class="checkbox-indicator"></span>
+    				Апартаменты
+    			</label>
     		</fieldset>
-    		<label>
-    			Стоимость в сутки (Р): 
-    			<input type="range" name="price">
-    		</label>
-    		<input type="submit" value="Показать">
+    		<div class="range">
+    			<div class="range-title">Стоимость в сутки (Р):</div>
+    			<div class="range-price">
+    				<label>
+    					от <input type="text" name="min-price" value="0">
+    				</label>
+    				<label>
+    					до <input type="text" name="max-price" value="3000">
+    				</label>
+    			</div>
+    			<div class="range-scale">
+    				<div class="scale">
+          		<div class="bar"></div>
+          	</div>
+            <div class="toggle toggle-min"></div>
+        		<div class="toggle toggle-max"></div>
+    			</div>
+    			<button type="submit">Показать</button>
+    		</div>
     	</form>
     	<div class="sort clearfix">
     		<div class="search-results"><span>Найдено: 3</span></div>

@@ -517,12 +517,171 @@ main {
 
 .filters {
 	min-height: 217px;
+	padding-left: 73px;
+	padding-right: 73px;
 	background-image: url("../img/filter-background.jpg");
 }
 
 .filters fieldset {
 	float: left;
-	width: 300px;
+	width: 253px;
+	margin-top: 30px;
+	border: none;
+	padding: 0;
+}
+
+.filters legend {
+	margin-bottom: 30px;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.filters label {
+	position: relative;
+	display: block;
+	margin-bottom: 32px;
+	padding-left: 40px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.filters input[type="checkbox"] {
+	display: none;
+}
+
+.filters .checkbox-indicator {
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 25px;
+	height: 22px;
+	background-image: url("../img/checkboxes.png");
+	background-repeat: no-repeat;
+}
+
+.filters input[type="checkbox"]:checked + .checkbox-indicator {
+	background-position: -49px 0;
+}
+
+.filters input[type="checkbox"]:disabled + .checkbox-indicator {
+	background-position: 0 -60px;
+}
+
+.filters input[type="checkbox"]:disabled:checked + .checkbox-indicator {
+	background-position: -49px -60px;
+}
+
+.filters .range {
+	float: right;
+	width: 330px;
+	margin-top: 30px;
+	color: #ffffff;
+}
+
+.range .range-title {
+	margin-bottom: 13px;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.range .range-price {
+	position: relative;
+	height: 36px;
+	margin-bottom: 20px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	font-size: 0;
+}
+
+.range .range-price::after {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: 50%;
+	width: 2px;
+	height: 22px;
+	background-color: #ffffff;
+}
+
+.range-price label {
+	display: inline-block;
+	padding-left: 65px;
+	font-size: 14px;
+	line-height: 36px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.range-price input {
+	width: 72px;
+	border: none;
+	color: #ffffff;
+	background-color: transparent;
+	outline: none;
+}
+
+.range .range-scale {
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.range-scale .scale {
+	height: 2px;
+	background-color: rgba(255,255,255,0.3);
+}
+
+.range-scale .bar {
+	height: 2px;
+	width: 80%;
+	background-color: #ffffff;
+}
+
+.range-scale .toggle {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	border: 8px solid #ffffff;
+	background-color: #ababab;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.range-scale .toggle-min {
+	left: 0;
+}
+
+.range-scale .toggle-max {
+	left: 80%;
+}
+
+.range-scale .toggle:hover {
+	background-color: #1c4f80;
+}
+
+.range button {
+	display: block;
+	margin: 0 auto;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	padding: 7px 35px;
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+}
+
+.range button:hover {
+	color: #000000;
+	background-color: #ffffff;
 }
 
 .sort {
